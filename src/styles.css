@@ -107,3 +107,7 @@ footer {
 .grow-on-hover:active {
     transform: scale(0.95);
 }
+
+.navbar-active {
+    border-bottom: solid 1px rgb(0, 0, 0);
+}
