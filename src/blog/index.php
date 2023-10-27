@@ -14,7 +14,7 @@
             if ($filename != 'index.php') {
                 $metadata = include $filename;
                 if (is_array($metadata)) {
-                    echo "<a href='/blog/$filename'>{$metadata['title']} ({$metadata['date']})</a>";
+                    echo "<ol><a href='/blog/$filename'>{$metadata['title']} ({$metadata['date']})</a></ol>";
                 }
             }
         }
