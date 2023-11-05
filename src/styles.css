@@ -23,6 +23,14 @@
     line-height: 1.6em;
 }
 
+html, body {
+    height: 100%; /* Full height of the viewport including URL bar */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 body {
     background-color: var(--off-white);
     min-height: 100vh;
@@ -38,9 +46,6 @@ main {
     margin: 0 auto;
     padding-left: 4%;
     padding-right: 4%;
-    flex-direction: column;
-    justify-content: space-between;
-    display: flex
 }
 
 /* Navbar */
