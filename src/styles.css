@@ -36,8 +36,8 @@ main {
     flex-grow: 1;
     max-width: 50rem;
     margin: 0 auto;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 /* Navbar */
@@ -68,8 +68,8 @@ nav {
     display: flex;
     align-items: center;
     border-bottom: solid 1px var(--light-grey);
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
     margin-bottom: 16px;
 }
 
@@ -78,8 +78,8 @@ footer {
     border-top: solid 1px var(--light-grey);
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,4 +129,3 @@ footer {
 #blog-post-date {
     font-size: 0.8rem;
 }
-
