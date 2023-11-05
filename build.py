@@ -23,7 +23,7 @@ def copy_file(source_path, output_path):
     shutil.copy2(source_path, output_path)
 
 def main():
-    local_server_base_url = 'http://localhost:8000'
+    local_server_base_url = 'http://localhost:8080'
 
     # Iterate over files and render or copy them
     for root, dirs, files in os.walk(SOURCE_PATH):
