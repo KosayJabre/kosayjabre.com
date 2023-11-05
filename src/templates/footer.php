@@ -1,6 +1,6 @@
 <footer>
     <div id="footer-content">
-        <a href="https://github.com/KosayJabre/kosayjabre.com" target="_blank" title="Source code for this site" id="source-link">Source code for this site</a>
+        <a href="https://github.com/KosayJabre/kosayjabre.com" target="_blank" title="Source code for this site" id="source-link">Source code</a>
         <div id="social-media-icons">
             <a href="mailto: kosay.jabre@gmail.com" title="Contact me">
                 <img src="/icons/email.svg" alt="Contact me" class="icon grow-on-hover">

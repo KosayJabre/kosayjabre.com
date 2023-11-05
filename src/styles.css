@@ -100,10 +100,10 @@ footer {
 /* Icons */
 .icon {
     vertical-align: middle;
-    width: 24px;
-    height: 24px;
-    padding-left: 8px;
-    padding-right: 8px;
+    width: 20px;
+    height: 20px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #social-media-icons a {
