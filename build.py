@@ -4,7 +4,7 @@ import shutil
 from bs4 import BeautifulSoup
 
 SOURCE_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'src')
-OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'dist')
+OUTPUT_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'docs')
 
 def render_and_save_html(url, output_path):
     print("Rendering: ", url)
