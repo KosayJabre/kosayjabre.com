@@ -76,8 +76,8 @@ nav {
 /* Footer */
 footer {
     border-top: solid 1px var(--light-grey);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-left: 4%;
     padding-right: 4%;
     display: flex;
