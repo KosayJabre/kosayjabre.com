@@ -1,6 +1,6 @@
 <?php
 $classes = "grow-on-hover";
-if (str_contains($_SERVER['SCRIPT_NAME'], "/blog/")) {
+if (strpos($_SERVER['SCRIPT_NAME'], "/blog/") !== false) {
     $classes .= " navbar-active";
 }
 ?>
