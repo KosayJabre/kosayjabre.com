@@ -38,6 +38,9 @@ main {
     margin: 0 auto;
     padding-left: 4%;
     padding-right: 4%;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex
 }
 
 /* Navbar */
