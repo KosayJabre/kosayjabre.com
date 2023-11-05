@@ -15,7 +15,7 @@
                 if (is_array($metadata)) {
                     // Replace .php extension with .html in the link
                     $htmlFilename = str_replace('.php', '.html', $filename);
-                    echo "<ol><a href='/blog/$htmlFilename'>{$metadata['title']} ({$metadata['date']})</a></ol>";
+                    echo "<div><a href='/blog/$htmlFilename'>{$metadata['title']} ({$metadata['date']})</a></div>";
                 }
             }
         }
