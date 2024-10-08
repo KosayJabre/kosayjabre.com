@@ -1,7 +1,8 @@
 <?php
 $metadata = [
     'title' => 'Eye Contact',
-    'date' => '31 May, 2020'
+    'date' => '31 May, 2020',
+    'published' => true
 ];
 
 if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {

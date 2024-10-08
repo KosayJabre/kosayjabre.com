@@ -21,10 +21,23 @@
     font-family: 'Merriweather', sans-serif;
     font-size: 1.1rem;
     line-height: 1.6em;
+    font-weight: 400;
 }
 
-html, body {
-    height: 100%; /* Full height of the viewport including URL bar */
+.icon {
+    display: inline;
+}
+
+img {
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 10px auto;
+}
+
+html,
+body {
+    height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
