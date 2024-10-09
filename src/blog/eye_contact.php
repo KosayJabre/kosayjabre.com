@@ -62,7 +62,9 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
                 One last attempt to open the door, and then it happened.
                 Through the gap in the door, we made eye contact.
             </p>
+            <p>
             One excruciating, awkward, shaming, infinitely long, silent second of eye contact.
+            </p>
             <p>
                 He rolled away and left the bathroom without saying a word.
                 But that eye contact said all that needed to be said.
