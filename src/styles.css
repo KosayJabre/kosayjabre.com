@@ -16,7 +16,6 @@ body {
 body {
     background-color: var(--off-white);
     min-height: 100vh;
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,11 +86,8 @@ nav {
     margin-bottom: 16px;
 }
 
-/* Footer */
 footer {
     border-top: solid 1px var(--light-grey);
-    padding-top: 6px;
-    padding-bottom: 6px;
     padding-left: 4%;
     padding-right: 4%;
     display: flex;
