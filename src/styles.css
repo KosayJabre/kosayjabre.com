@@ -23,6 +23,7 @@ body {
 
 main {
     flex-grow: 1;
+    width: 92%;
     max-width: 90ch;
     margin: 0 auto;
     padding-left: 4%;
@@ -46,10 +47,12 @@ p {
 
 img {
     display: block;
+    width: 100%;
     max-width: 80%;
     height: auto;
     margin: 10px auto;
 }
+
 
 
 
@@ -134,8 +137,4 @@ footer {
 
 .navbar-active {
     border-bottom: solid 1px var(--off-black);
-}
-
-#blog-post-date {
-    font-size: 0.8rem;
 }
