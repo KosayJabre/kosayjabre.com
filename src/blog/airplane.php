@@ -159,7 +159,7 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
                 </p>
                 
                 <p>
-                I'll have to remember to bring a personal device next time! Maybe I can a POST request to change our altitude, too ...
+                I'll have to remember to bring a personal device next time! Maybe I can make a POST request to change our altitude, too ...
                 </p>
 
 
