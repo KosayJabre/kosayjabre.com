@@ -133,11 +133,7 @@ def haversine(lat1, lon1, lat2, lon2, radius=EARTH_RADIUS_KM):
                 To calculate our bearing, I used the following code:
                 </p>
                 <pre><code class="python">
-# Function to calculate bearing between two points
 def calculate_bearing(lat1, lon1, lat2, lon2):
-    """
-    Calculate the bearing between two points on the Earth specified by latitude and longitude.
-    """
     lat1_rad = radians(lat1)
     lat2_rad = radians(lat2)
     diff_long = radians(lon2 - lon1)
@@ -146,8 +142,7 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
     y = cos(lat1_rad) * sin(lat2_rad) - (sin(lat1_rad) * cos(lat2_rad) * cos(diff_long))
 
     initial_bearing = atan2(x, y)
-
-    # Convert from radians to degrees and normalize the bearing to 0 - 360 degrees
+    # Normalize to a compass bearing
     initial_bearing = (initial_bearing * 180 / math.pi) % 360
 
     return initial_bearing
