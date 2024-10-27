@@ -15,7 +15,9 @@
                 if (is_array($metadata) && $metadata['published']) {
                     // Replace .php extension with .html in the link
                     $htmlFilename = str_replace('.php', '.html', $filename);
-                    echo "<div><a href='/blog/$htmlFilename'>{$metadata['title']} ({$metadata['date']})</a></div>";
+                    echo "<ul>";
+                    echo "<li><p><a href='/blog/$htmlFilename'>{$metadata['title']} ({$metadata['date']})</a></p></li>";
+                    echo "</ul>";
                 }
             }
         }
