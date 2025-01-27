@@ -24,20 +24,20 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
                 Excited to try it, I connected to the local network on the plane and scanned the QR code to purchase access.
                 Unfortunately, it looked like the site was broken and the page could not be reached:
                 </p>
-                    <img src="../resources/airplane_api/cant_be_reached.png">
+                    <img src="../resources/airplane_api/cant_be_reached.jpg">
 
                 <h3> Getting Internet </h3>
                 <p>
                 I was still connected to the network on the plane though, so I was curious to see if I could get access to the internet another way. 
                 I fired up a terminal and ran a traceroute to get the IP of the router on the plane:
                 </p>
-                <img src="../resources/airplane_api/traceroute.png">
+                <img src="../resources/airplane_api/traceroute.jpg">
 
                 <p>
                 Out of curiosity, I pasted the address into my browser to see what would happen. 
                 It redirected me to the correct page where I could buy internet!
                 </p>
-                <img src="../resources/airplane_api/condor_website.png">
+                <img src="../resources/airplane_api/condor_website.jpg">
 
                 <p>
                 I must have been the only person on the entire plane who was able to access the internet. Everyone else would have been using the broken URL from the provided QR codes.
@@ -48,19 +48,19 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
                 <p>
                 Naturally, I started poking around. The website was making lots of network requests:
                 </p>
-                <img src="../resources/airplane_api/digging_around.png">
+                <img src="../resources/airplane_api/digging_around.jpg">
                 
                 <p>
                 One thing that was quite interesting was this `info.json` endpoint which seemed to contain lots of data like our current position, altitude, destination, and even whether the internet had been disabled by the flight crew or not:
                 </p>
-                <img src="../resources/airplane_api/info_json.png">
+                <img src="../resources/airplane_api/info_json.jpg">
                 
                 
                 <h2> Graphing Altitude </h2>
                 <p>
                 I wrote a quick Python script to keep hitting this endpoint every second and save the data. I was able to track our altitude over time and graphed it:
                 </p>
-                <img src="../resources/airplane_api/altitude.png">
+                <img src="../resources/airplane_api/altitude.jpg">
                 
                 <p>
                 Neat! The altitude was surprisingly stable (note that the y-axis markers are only 10 meters)! 
@@ -85,7 +85,7 @@ if (basename($_SERVER['PHP_SELF']) == basename(__FILE__)) {
                 <p>
                 This graphic explains it well:
                 </p>
-                <img src="../resources/airplane_api/haversine_explanation.png">
+                <img src="../resources/airplane_api/haversine_explanation.jpg">
 
                 <p>
                 With the help of a local LLM, I whipped up the following code to calculate it:
@@ -114,7 +114,7 @@ def haversine(lat1, lon1, lat2, lon2, radius=EARTH_RADIUS_KM):
                 <p>
                 Which yielded a speed graph that looked something like this:
                 </p>
-                <img src="../resources/airplane_api/raw_speed.png">
+                <img src="../resources/airplane_api/raw_speed.jpg">
 
                 <p>
                 Yikes! Very noisy. 
@@ -122,7 +122,7 @@ def haversine(lat1, lon1, lat2, lon2, radius=EARTH_RADIUS_KM):
                 <p>
                 To smooth it out, I increased the polling time from 1s to 3s to allow more of a distance to build up between points. Then I smoothed out the signal using a moving average to get the final speed:
                 </p>
-                <img src="../resources/airplane_api/smoothed_speed.png">
+                <img src="../resources/airplane_api/smoothed_speed.jpg">
 
                 <p>
                 Much better! I was able to see that the plane was cruising at around 900 km/h, which the inflight display confirmed.
@@ -151,7 +151,7 @@ def calculate_bearing(lat1, lon1, lat2, lon2):
                 <p>
                 And got something that looks like this: 
                 </p>
-                <img src="../resources/airplane_api/orientation.png">
+                <img src="../resources/airplane_api/orientation.jpg">
 
                 <h2> Landing </h2>
                 <p>
