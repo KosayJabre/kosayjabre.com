@@ -58,7 +58,7 @@ def main():
             if file.endswith('.php'):
                 url = local_server_base_url + file_path.replace(SOURCE_PATH, '').replace('\\', '/')
                 render_and_save_html(url, output_path.replace('.php', '.html'))
-            elif file.lower().endswith(('.png', '.jpg', '.jpeg', '.svg')):
+            elif file.lower().endswith(('.png', '.jpg', '.jpeg')):
                 compress_image(file_path, output_path)
             else:
                 # For non-PHP files, copy them as is
