@@ -1,6 +1,13 @@
+@font-face {
+    font-family: "Source Serif 4";
+    src: url("/SourceSerif4.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
 :root {
-    --off-white: rgb(250, 250, 250);
-    --off-black: rgb(20, 20, 20);
+    --off-white: rgb(252, 252, 252);
+    --off-black: rgb(25, 25, 25);
     --light-grey: rgb(200, 200, 200)
 }
 
@@ -24,20 +31,25 @@ body {
 main {
     flex-grow: 1;
     width: 92%;
-    max-width: 90ch;
+    max-width: 80ch;
     margin: 0 auto;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-bottom: 2rem;
 }
 
 * {
     color: var(--off-black);
-    font-family: Georgia, sans-serif;
+    font-family: "Source Serif 4", Georgia, Cambria, "Times New Roman", Times, serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
 
-p {
-    line-height: 1.5rem;
-    font-size: 1.25rem
+p,
+li {
+    line-height: 1.6;
+    font-size: 1.33rem;
+    letter-spacing: -0.001em;
+    margin-top: 1rem;
+    margin-bottom: 0;
 }
 
 

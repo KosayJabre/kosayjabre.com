@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+<title>Kosay Jabre</title>
+<link href="/styles.css" rel="stylesheet"/>
+<link href="/icons/favicon.ico" rel="icon" type="image/x-icon"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script> </head>
+<body>
+<nav>
+<h1 class="grow-on-hover" id="hero"><a href="/">Kosay Jabre</a></h1>
+<ul>
+<li class="grow-on-hover"><a class="grow-on-hover navbar-active" href="/blog">Blog</a></li>
+</ul>
+</nav>
+<main>
+<header id="blog-post-header">
+<h2 id="blog-post-title">
+        Flip7    </h2>
+<div id="blog-post-date">
+        6 April, 2026    </div>
+</header>
+<p>
+                I'm visiting some friends and family in Germany and we've been playing a lot of Flip7 (a push-your-luck card game similar to Blackjack). 
+                <br/>
+                After losing too many times I decided to do what any reasonable person would do: build a computer program that plays the game optimally and use it to <s>utterly dominate my enemies</s> beat my friends.  
+                <br/>
+                I ended up using a technique called reinforcement learning to train an artificial neural network (which we named "Alfred") to play the game, and it ended up being pretty good!
+                It was pretty fun to build and I thought I'd share the process in this blog post. It went roughly something like this:
+                <ul>
+<li>Build a digital version of the game.</li>
+<li>Build an "expected value" solver for the game.</li>
+<li>Use reinforcement learning to train a neural network that approximates the solver.</li>
+</ul>
+</p>
+<h3> Game Rules </h3>
+<p>
+                    It's a fairly simple game. The full rules can be found <a href="https://cdn.shopify.com/s/files/1/0611/3958/3198/files/25_FLIP_7_TB_RULES_C_Rev_9_2_25_ND.pdf?v=1756935535">here</a>. 
+                    The gist of it is that you need 200 points to win, and you score points across multiple rounds.
+                    In each round, you can "hit" to draw a random card and put it infront of you or "stay" to convert the number value of the cards you have infront of you into points.
+                    Here's the catch: if you hit and draw a duplicate card that you already have infront of you, you "bust" and score 0 points for that round.
+                    It's also played with a special deck of cards. Cards appear in the deck as many times as their number of value (ie. there are 12 twelves, 11 elevens, 10 tens, etc.).
+                    There are a few other things (modifier cards like x2 that double your score for that round and action cards like "Flip 3 in a row" that can be played on yourself or other players) but that's pretty much it. 
+                </p>
+<h3> Solving the Game </h3>
+<p>
+</p>
+<h3> Reinforcement Learning </h3>
+<p>
+</p>
+</main>
+<footer>
+<div id="footer-content">
+<a href="https://github.com/KosayJabre/kosayjabre.com" id="source-link" target="_blank" title="Source code for this site">Source code</a>
+<div id="social-media-icons">
+<a href="mailto: kosay.jabre@gmail.com" title="Contact me">
+<img alt="Contact me" class="icon grow-on-hover" src="/icons/email.svg"/>
+</a>
+<a href="https://www.linkedin.com/in/kosay-jabre/" target="_blank" title="My LinkedIn">
+<img alt="LinkedIn logo" class="icon grow-on-hover" src="/icons/linkedin.svg"/>
+</a>
+<a href="https://github.com/KosayJabre" target="_blank" title="My GitHub">
+<img alt="GitHub logo" class="icon grow-on-hover" src="/icons/github.svg"/>
+</a>
+<a href="https://www.facebook.com/kosay.j.jabre/" target="_blank" title="My Facebook">
+<img alt="Facebook logo" class="icon grow-on-hover" src="/icons/facebook.svg"/>
+</a>
+<a href="https://stackoverflow.com/users/13707960/kosay-jabre" target="_blank" title="My Stack Overflow">
+<img alt="Stack Overflow logo" class="icon grow-on-hover" src="/icons/stack_overflow.svg"/>
+</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
