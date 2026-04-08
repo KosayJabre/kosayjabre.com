@@ -44,7 +44,7 @@ main {
 }
 
 p,
-li {
+main li {
     line-height: 1.6;
     font-size: 1.33rem;
     letter-spacing: -0.001em;
@@ -74,7 +74,7 @@ img {
 }
 
 #hero a {
-    font-size: 1.66rem;
+    font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     padding-right: 16px;
@@ -96,8 +96,7 @@ nav {
     display: flex;
     align-items: center;
     border-bottom: solid 1px var(--light-grey);
-    padding-left: 4%;
-    padding-right: 4%;
+    padding: 0.3rem 4%;
     margin-bottom: 16px;
 }
 
@@ -143,10 +142,6 @@ footer {
 
 .grow-on-hover:hover {
     transform: scale(1.075);
-}
-
-.grow-on-hover:active {
-    transform: scale(0.975);
 }
 
 .navbar-active {
