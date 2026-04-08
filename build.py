@@ -55,7 +55,7 @@ def main():
             file_path = os.path.join(root, file)
             output_path = file_path.replace(SOURCE_PATH, OUTPUT_PATH)
 
-            if file.endswith('.php'):
+            if file.endswith('.php') and 'templates' not in root:
                 url = local_server_base_url + file_path.replace(SOURCE_PATH, '').replace('\\', '/')
                 render_and_save_html(url, output_path.replace('.php', '.html'))
             elif file.lower().endswith(('.png', '.jpg', '.jpeg')):

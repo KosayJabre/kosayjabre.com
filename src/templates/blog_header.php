@@ -1,3 +1,4 @@
+<?php if (isset($metadata)): ?>
 <header id="blog-post-header">
     <h2 id="blog-post-title">
         <?php echo $metadata['title']; ?>
@@ -6,3 +7,4 @@
         <?php echo $metadata['date']; ?>
     </div>
 </header>
+<?php endif; ?>
